@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+body{
+    min-height: 100vh;
+    background-image: url(bg-pattern-top-desktop.svg), url(bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -25rem, 15rem;
+    background-position-y: -15rem, 4rem;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'League Spartan' , sans-serif;
+}
+
+main{
+    box-sizing: border-box;
+    width: 75%;
+}
+
+.parent{
+    position: relative;
+    top: 10%;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.child1{
+    box-sizing: border-box;
+    margin-right: 20rem;
+    padding-right: 30%;
+}
+
+.intro{
+    font-weight: 500;
+}
+
+.intro1, .intro2, .intro3{
+    text-align: left;
+    position: relative;
+    top: 2rem;
+    margin-right: -7.5rem;
+    margin-left: -17.5rem;
+    background-color: hsl(303, 10%, 53%);
+    padding-right: 1rem; 
+    padding-top: .5rem;
+    padding-bottom: .5rem;   
+    padding-left: 2rem; 
+    border-radius: .5rem;
+    color: hsl(300, 43%, 22%);
+}
+
+.intro1{
+    position: relative;
+    right: 3.5rem;
+    color: hsl(300, 43%, 22%);
+}
+
+.intro2{
+    position: relative;
+    right: 2rem;
+    color: hsl(300, 43%, 22%);
+}
+
+.intro3{
+    position: relative;
+    right: .5rem;
+    color: hsl(300, 43%, 22%);
+}
+
+h1{
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.parent2{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    top: 20%;
+    box-sizing: border-box;
+    height: 15rem;
+}
+
+.con1, .con2, .con3{
+    position: relative;
+    flex-direction: row;
+    background-color: hsl(300, 43%, 22%);
+    color: #fff;
+    text-align: left;
+    border-radius: 5%;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+}
+
+.con1{
+    position: relative;
+    right: 2%;
+}
+
+.con2{
+    position: relative;
+    right: .5%;
+    top: 5%;
+}
+
+.con3{
+    position: relative;
+    left: 1%;
+    top: 10%;
+}
+
+img{
+    border-radius: 50%;
+    width: 5%;
+}
+
+.anne, .colton, .irene{
+    width: 15%;
+    float: left;
+    margin-right: 1rem;
+}
+
+.title1 , .title2{
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.title2{
+    color: hsl(333, 80%, 67%);
+}
+
+/* Responsiveness */
+
+/*---------- Devices with 480px width---------- */
+
+@media (max-width: 768px){
+
+    body{
+        background-image: url(bg-pattern-top-mobile.svg), url(bg-pattern-bottom-mobile.svg);
+        background-repeat: no-repeat;
+    }
+
+    .parent{
+        width: 20rem;
+        flex-direction: column;
+        text-align: center;
+        justify-content: start;
+        align-items: flex-start;
+        width: auto;
+    }
+
+    .child1{
+        margin: 0;
+        padding: 0;
+    }
+
+    .child2{
+        margin: 0;
+        padding: 0;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .intro1, .intro2, .intro3{
+        width: 100%;
+        margin: 0;
+        right: 0;
+        margin-top: 1rem;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        padding-right: .5rem;
+        padding-left: .5rem;
+    }
+
+    .parent2{
+        flex-direction: column;
+        justify-content: center;
+        top: 50%;
+    }
+    
+    .con1, .con2, .con3{
+        position: relative;
+        right: 0;
+        top: 0;
+        left: 0;
+    }
+
+    .con2{
+        top: 5%;
+    }
+
+    .con3{
+        top: 10%;
+    }
+}
